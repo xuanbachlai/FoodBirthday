@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Happy Birthday Food</title>
+	<style>
+
+#gift {
+	width: 256px;
+	height: 256px;
+	background: url(asset/first.png);
+}
+
+	</style>
+</head>
+<body>
+	<div id="gift" onclick="open_gift()"></div>
+</body>
+<script>
+	function open_gift() {
+		var gift = document.getElementById("gift");
+
+		gift.style.background = 'url(asset/ani.gif)';
+	}
+</script>
+</html>
