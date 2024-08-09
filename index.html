@@ -12,16 +12,28 @@
 	background: url(asset/first.png);
 }
 
+#video {
+	position: relative;
+	visibility: hidden;
+}
+
 	</style>
 </head>
 <body>
-	<div id="gift" onclick="open_gift()"></div>
+	<div id="gift" onclick="open_gift()">
+		<video id="video" width="100" height="200" controls>
+			<source src="asset/video.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div>
 </body>
 <script>
 	function open_gift() {
-		var gift = document.getElementById("gift");
+		var gift = document.getElementById("gift")
+		var video = document.getElementById("video")
 
-		gift.style.background = 'url(asset/ani.gif)';
+		gift.style.background = 'url(asset/ani.gif)'
+		video.style.visibility = 'unset';
 	}
 </script>
 </html>
